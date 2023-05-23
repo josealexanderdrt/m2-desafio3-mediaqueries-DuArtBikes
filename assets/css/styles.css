@@ -1,0 +1,11 @@
+
+@media (max-width: 576px) {
+    body {
+        background-color: black;
+}
+    
+}
+
+@media (min-width: 576px) {
+    body {background-color: #749c2c;}
+}
