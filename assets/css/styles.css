@@ -10,6 +10,11 @@ header {
     justify-content: flex-start;
     align-items: center;}
 
+header h1{ font-size: 15px;
+            text-align: left;}
+
+/* menu de navegación  */
+
 nav { 
     grid-area: nav;
     background-color: aqua;
@@ -17,14 +22,41 @@ nav {
     justify-content: flex-end;
     align-items: center;
 }
-
+/* Filtro header */
 section{
     grid-area: section;
-    background-color: brown;}
+    background-color: brown;
+    text-align: center;}
+
+.caja-precios { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 30px 10px 30px;
+        background-color: beige;
+        font-size: 10px;
+      
+
+    }
+
+.caja-precios p{ padding-left: 10px;}
+
+/* Articulos a la venta */
 
 main{ 
     grid-area: main; 
     background-color: gray;}
+
+
+.caja-item{ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+margin: 20px 40px 20px 40px;
+padding: 0 20px 20px 20px;
+}
 
 footer{ 
     grid-area: footer;
@@ -41,13 +73,17 @@ color: beige;}
     "main main"
     "footer footer";
     grid-template-columns: auto  auto;
-    grid-template-rows: 8% 8% auto 5%;
+    grid-template-rows: 8% 10% auto 5%;
     height: 100vh;
 }
 /* IMAGENES*/
 .logoxs{ height: 30px;
 padding: 10PX;}
-.fa-solid {padding: 10PX;}
+.fa-solid {padding: 10px;}
+
+
+.caja-item img { height: 200px;
+}
 
 /*
 @media (min-width: 576px) {
