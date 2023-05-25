@@ -22,6 +22,9 @@ nav {
     justify-content: flex-end;
     align-items: center;
 }
+
+nav p{ display: none;}
+
 /* Filtro header */
 section{
     grid-area: section;
@@ -42,14 +45,19 @@ section{
 
 .caja-precios p{ padding-left: 10px;}
 
-/* Articulos a la venta */
+/* main y Articulos a la venta  */
 
 main{ 
     grid-area: main; 
-    background-color: gray;}
+    background-color: gray;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 
 
-.caja-item{ display: flex;
+.caja-item1{ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -57,6 +65,26 @@ border: 1px solid black;
 margin: 20px 40px 20px 40px;
 padding: 0 20px 20px 20px;
 }
+
+.nav-pag{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ .nav-pag a{ text-decoration: none;
+    border: 1px solid blueviolet;
+    color: aqua;
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+    height: 20px;
+    float: left;
+    grid-area: navegacionp;
+    
+}
+
+
 
 /* footer */
 footer{ 
@@ -73,7 +101,7 @@ footer{
 
 
 
-.container{
+body{
     display: grid;
     grid-template-areas: 
     "header nav"
@@ -90,9 +118,57 @@ padding: 10PX;}
 .fa-solid {padding: 10px;}
 
 
-.caja-item img { height: 275px;
-    width: 250px;
+.caja-item1 img { height: 250px;
+    width: 250px; grid-area: bike;}
+
+.caja-item2 {display: none; grid-area: bike;}
+
+
+
+
+
+@media (min-width: 992px){
+
+    body{ grid-template-areas:
+        "header section"
+        "nav main"
+        "footer main"
+         ;
+        grid-template-columns: 20%  80%;
+        grid-template-rows: 8% auto 10%;
+    }
+
+  .caja-item2{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 20px 40px 20px 40px;
+    padding: 0 20px 20px 20px;}
+   
+    .caja-item2 img { height: 275px;
+        width: 250px;}
+    
+    .items-all{ display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+ 
+   nav .fa-solid{ display: none;}
+  
+
+    nav p {display:flex;padding: 5px;
+    margin-top: 10px;}
+    
+    nav{ display: flex;
+    flex-direction: column;
+justify-content:start;
+align-items:center;}
 }
+
+
 
 /*
 @media (min-width: 576px) {
