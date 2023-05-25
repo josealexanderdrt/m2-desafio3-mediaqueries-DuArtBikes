@@ -150,7 +150,7 @@ padding: 10PX;}
     .items-all img { height: 275px;
         width: 250px;}
 
-
+/*
         
     .items-all{
      
@@ -161,14 +161,16 @@ padding: 10PX;}
        
     
     }
+
+    */
    
-   /*
+   
         .items-all{ display: flex;
         flex-wrap:wrap;
         justify-content: center;
         align-items: center;
     }
-*/
+
  
    nav .fa-solid{ display: none;}
   
