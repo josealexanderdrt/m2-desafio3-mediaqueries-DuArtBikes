@@ -119,9 +119,10 @@ padding: 10PX;}
 
 
 .caja-item1 img { height: 250px;
-    width: 250px; grid-area: bike;}
+    width: 250px; }
 
 .caja-item2 {display: none; grid-area: bike;}
+.caja-item1 { grid-area: bike;}
 
 
 
@@ -146,15 +147,26 @@ padding: 10PX;}
     margin: 20px 40px 20px 40px;
     padding: 0 20px 20px 20px;}
    
-    .caja-item2 img { height: 275px;
+    .items-all img { height: 275px;
         width: 250px;}
+
+    .items-all{
+     
+       display: grid;
+       grid-template-columns: auto auto;
+       grid-template-rows: auto auto auto;
+       justify-content:space-between ;
+       
     
-    .items-all{ display: flex;
+    }
+   
+   /*
+        .items-all{ display: flex;
         flex-wrap:wrap;
         justify-content: center;
         align-items: center;
     }
-
+*/
  
    nav .fa-solid{ display: none;}
   
